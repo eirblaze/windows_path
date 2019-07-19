@@ -2,4 +2,4 @@
 
 $env:Path += ";C:\Program Files\OpenSSH"
 [Environment]::SetEnvironmentVariable('PATH', $Env:Path, 'Machine')
-
+pause

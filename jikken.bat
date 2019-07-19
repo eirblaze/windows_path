@@ -1,4 +1,3 @@
-@powershell -NoProfile -ExecutionPolicy Unrestricted "$s=[scriptblock]::create((gc \"%~f0\"|?{$_.readcount -gt 1})-join\"`n\");&$s" %*&goto:eof
-
-get-childitem env:
-pause
+@echo off
+echo %PATH2%
+echo %PATH2:~0,-1%

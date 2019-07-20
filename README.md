@@ -55,9 +55,8 @@
 <p>
 これらをやらないと、`setx`コマンドの1024文字制限(注3-1.)に引っかかる可能性があるのと、もとの環境変数`path`を保護する意味合いがあります。
 </p>
-<p>
+
 (注3-1.) [＠IT > クラウド > Windows Server Insider > 環境変数のサイズやPATHの長さ制限に注意](https://www.atmarkit.co.jp/ait/articles/1510/30/news041.html)
-</p>
 
 ### 4. 番外編。システム環境変数とする場合
 

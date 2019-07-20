@@ -20,7 +20,9 @@
 
 ### 2. コンテキストメニュー追加
 
-以下の操作でフォルダを開く<br>
+同梱の`sendoto_menu.lnk`をダウンロードして開く。<br>
+<br>
+または、以下の操作でフォルダを開く<br>
 <br>
  2-1. `Ctrl+R`<br>
  2-2. ダイアログに入力:`shell:sendto`<br>
@@ -74,6 +76,7 @@ setx PATH2 %newpath% /M
 - [DOSバッチファイルを書くときに気をつけていること](https://qiita.com/yz2cm/items/d2c86a09d6b1861d684d)
 - [Windows、バッチファイル（.bat）に引数を渡す](http://piyopiyocs.blog115.fc2.com/blog-entry-725.html)
 - [＠IT > クラウド > Windows Server Insider > 環境変数のサイズやPATHの長さ制限に注意](https://www.atmarkit.co.jp/ait/articles/1510/30/news041.html)
+- [Windows、バッチファイル（.bat）からフォルダを開く - マコトのおもちゃ箱](http://piyopiyocs.blog115.fc2.com/blog-entry-490.html)
 
 ## 参考2: PowerShell
 

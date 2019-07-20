@@ -71,6 +71,7 @@ path2 = `(なし)`<br>
 - [Windowsバッチまとめ](https://qiita.com/tomotagwork/items/5b9e08f28d5925d96b5f#%E5%A4%89%E6%95%B0)
 - [DOSバッチファイルを書くときに気をつけていること](https://qiita.com/yz2cm/items/d2c86a09d6b1861d684d)
 - [Windows、バッチファイル（.bat）に引数を渡す](http://piyopiyocs.blog115.fc2.com/blog-entry-725.html)
+[＠IT > クラウド > Windows Server Insider > 環境変数のサイズやPATHの長さ制限に注意](https://www.atmarkit.co.jp/ait/articles/1510/30/news041.html)
 
 ## 参考2: PowerShell
 

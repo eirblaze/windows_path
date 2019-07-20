@@ -65,17 +65,17 @@ path2 = `(なし)`<br>
 
 ## 参考1: バッチファイル
 
-[Windows10 「送る」によく使うフォルダーを追加する方法(SendTo)](https://pc-chain.com/windows10-sendto/2736/)
-[Windows で環境変数 PATH をいじる方法のまとめ](https://qiita.com/sta/items/6d29da0dc7069ffaae60)
-[SETX コマンドで環境変数を永続的に設定する](https://qiita.com/rohinomiya/items/cf5236678b3459da9017)
-[Windowsバッチまとめ](https://qiita.com/tomotagwork/items/5b9e08f28d5925d96b5f#%E5%A4%89%E6%95%B0)
-[DOSバッチファイルを書くときに気をつけていること](https://qiita.com/yz2cm/items/d2c86a09d6b1861d684d)
-[Windows、バッチファイル（.bat）に引数を渡す](http://piyopiyocs.blog115.fc2.com/blog-entry-725.html)
+- [Windows10 「送る」によく使うフォルダーを追加する方法(SendTo)](https://pc-chain.com/windows10-sendto/2736/)
+- [Windows で環境変数 PATH をいじる方法のまとめ](https://qiita.com/sta/items/6d29da0dc7069ffaae60)
+- [SETX コマンドで環境変数を永続的に設定する](https://qiita.com/rohinomiya/items/cf5236678b3459da9017)
+- [Windowsバッチまとめ](https://qiita.com/tomotagwork/items/5b9e08f28d5925d96b5f#%E5%A4%89%E6%95%B0)
+- [DOSバッチファイルを書くときに気をつけていること](https://qiita.com/yz2cm/items/d2c86a09d6b1861d684d)
+- [Windows、バッチファイル（.bat）に引数を渡す](http://piyopiyocs.blog115.fc2.com/blog-entry-725.html)
 
 ## 参考2: PowerShell
 
 今回は適用してないがPowershell版の参考
-[バッチファイルから PowerShell を呼び出す方法](https://qiita.com/cd01/items/82829ba0ec0f59e1b04d)
-[batからps1ファイルを実行するときのあれこれ](https://qiita.com/HiDARi/items/1d2595ff142883c3bac1)
-[PowerShellで環境変数を参照、設定する](https://www.whyit.work/entry/2018/07/09/171632)
-[Powershellで引数を受け取る](https://microsoftou.com/ps-arguments/)
+- [バッチファイルから PowerShell を呼び出す方法](https://qiita.com/cd01/items/82829ba0ec0f59e1b04d)
+- [batからps1ファイルを実行するときのあれこれ](https://qiita.com/HiDARi/items/1d2595ff142883c3bac1)
+- [PowerShellで環境変数を参照、設定する](https://www.whyit.work/entry/2018/07/09/171632)
+- [Powershellで引数を受け取る](https://microsoftou.com/ps-arguments/)

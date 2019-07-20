@@ -10,7 +10,7 @@
 
 ## 詳細はこちら
 
-Qiita
+[Qiita - Windowsの環境変数「PATH」を通す機能を、コンテキストの「送る」メニューに追加する](https://qiita.com/firblaze/items/63dea6813c0e9af38a78)
 
 ## 導入手順
 

@@ -42,8 +42,8 @@
 <p>
 例：もともと<br>
 <br>
-path  = `C:\aaaa\bin;D:\iiii\bin`<br>
-path2 = `(なし)`<br>
+`path`  = `C:\aaaa\bin;D:\iiii\bin`<br>
+`path2` = `(なし)`<br>
 <br>
 だったものが、変更後、<br>
 <br>

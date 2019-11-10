@@ -80,8 +80,14 @@ setx PATH2 %newpath% /M
 
 ## 参考2: PowerShell
 
-今回は適用してないがPowershell版の参考
+- [Windows環境変数の設定に「SETX」コマンドを使ってはいけない理由](https://qiita.com/jeyei/items/05ce2739501832463b3b)
 - [バッチファイルから PowerShell を呼び出す方法](https://qiita.com/cd01/items/82829ba0ec0f59e1b04d)
 - [batからps1ファイルを実行するときのあれこれ](https://qiita.com/HiDARi/items/1d2595ff142883c3bac1)
 - [PowerShellで環境変数を参照、設定する](https://www.whyit.work/entry/2018/07/09/171632)
 - [Powershellで引数を受け取る](https://microsoftou.com/ps-arguments/)
+- [MURA's HomePage > Windows にまつわる e.t.c. > PowerShell スクリプト引数(Param)の Tips](https://www.vwnet.jp/Windows/PowerShell/Param.htm)
+- [Test-Pathコマンドレットで変数の有無を確認できる](https://m0t0k1x2.tumblr.com/post/133499335514/test-path%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%AC%E3%83%83%E3%83%88%E3%81%A7%E5%A4%89%E6%95%B0%E3%81%AE%E6%9C%89%E7%84%A1%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%81%8D%E3%82%8B)
+- [バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ ファイルとフォルダのどちらかを判定する方法](https://bayashita.com/p/entry/show/229)
+- [IT製品情報 IT Search+解説/事例記事（サーバ/ストレージ）【連載】PowerShell Core入門 - 基本コマンドの使い方 [6] ファイルやディレクトリの表示 Get-Item、Get-ChildItem、Format-List](https://news.mynavi.jp/itsearch/article/hardware/3718)
+- [Windows 使ってますね♪ / PowerShell / PowerShellのif文でand,or,xor,notを記述する方法](https://win.just4fun.biz/?PowerShell/PowerShell%E3%81%AEif%E6%96%87%E3%81%A7and%2Cor%2Cxor%2Cnot%E3%82%92%E8%A8%98%E8%BF%B0%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)
+- [ExRecord > PowerShell > Windows PowerShellの文字列内で変数を扱う方法](http://exrecord.net/how-to-use-variable-in-string)

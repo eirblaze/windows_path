@@ -8,7 +8,7 @@ Write-Debug $Arg1
 Write-Debug "ファイル存在チェック"
 
 if( -Not(Test-Path $Arg1) ){
-    Write-Debug '指定されたファイルは存在しません。処理を終了します。'
+    Write-Host '指定されたファイルは存在しません。処理を終了します。'
     exit
 }
 
@@ -57,7 +57,7 @@ else
 }
 
 # 環境変数をセット
-Write-Debug "セット予定 $($NewPath)"
+Write-Host "セット予定 $($NewPath)"
 [Environment]::SetEnvironmentVariable('Path2', $NewPath, 'User')
 
 Write-Debug "現在のenv:Path2 $($env:Path2)"

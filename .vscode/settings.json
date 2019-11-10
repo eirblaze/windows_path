@@ -1,0 +1,9 @@
+{
+    // 参考1 技術は生もの > VS Codeで拡張子ごとの関連付けを設定する https://blog.noraneko.work/2018-01-04-001/
+    // 参考2 だだだだだだいありー > VisualStudioCodeであるフォルダ以下のファイルを全てShift-JISで開きたい http://k6i.hateblo.jp/entry/2017/07/24/194033
+    "files.associations":
+    {
+        "*.bat":"powershell"
+    }
+}
+

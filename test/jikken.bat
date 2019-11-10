@@ -38,6 +38,7 @@ else
         Write-Host "アイテムを$($item.Name)として再取得成功"
     }
 }
+Write-Host "フルネーム $($item.FullName)"
 
 # 環境変数存在チェック/取得 - $env:環境変数名
 Write-Host "環境変数存在チェック/取得"
@@ -58,6 +59,23 @@ if (Test-Path Env:Path4) {
     Write-Host $env:Path4
 }
 
-# 環境変数をセット。新規／上書き
+# 新しい環境変数を生成。新規／上書きで処理を分岐。
+
+# 新規の場合
+if ( -Not(Test-Path Env:PathN) ) {
+    Write-Host "new PathN"
+    $NewPath = $item.FullName
+}
+# 追加の場合
+else
+{
+    Write-Host "add PathN"
+    $NewPath = "$($env:PathN);$($item.FullName)"
+}
+
+# 環境変数をセット
+Write-Host "セット予定 $($NewPath)"
+[Environment]::SetEnvironmentVariable('PATH', $Env:PathN, $NewPath)
+
 
 Write-Host "---------------------------------------------------------------------------------------"

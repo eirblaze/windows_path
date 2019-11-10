@@ -35,21 +35,28 @@ else
     $item = Get-Item $parent_folder
 
     if ($item.PSIsContainer) {
-        Write-Host "$($item.Name)として再取得成功"
+        Write-Host "アイテムを$($item.Name)として再取得成功"
     }
 }
 
-# 環境変数存在チェック
-Test-Path Env:Path
-Test-Path Env:Path2
-Test-Path Env:Path3
-Test-Path Env:Path4
-
-# 環境変数取得 - $env:環境変数名
-Write-Host "Path"
-Write-Host $env:Path
-Write-Host "Path2"
-Write-Host $env:PATH2
+# 環境変数存在チェック/取得 - $env:環境変数名
+Write-Host "環境変数存在チェック/取得"
+if (Test-Path Env:Path) {
+    Write-Host "Path"
+    Write-Host $env:Path
+}
+if (Test-Path Env:Path2) {
+    Write-Host "Path2"
+    Write-Host $env:Path2
+}
+if (Test-Path Env:Path3) {
+    Write-Host "Path3"
+    Write-Host $env:Path3
+}
+if (Test-Path Env:Path4) {
+    Write-Host "Path4"
+    Write-Host $env:Path4
+}
 
 # 環境変数をセット。新規／上書き
 

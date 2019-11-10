@@ -80,7 +80,6 @@ setx PATH2 %newpath% /M
 
 ## 参考2: PowerShell
 
-今回は適用してないがPowershell版の参考
 - [バッチファイルから PowerShell を呼び出す方法](https://qiita.com/cd01/items/82829ba0ec0f59e1b04d)
 - [batからps1ファイルを実行するときのあれこれ](https://qiita.com/HiDARi/items/1d2595ff142883c3bac1)
 - [PowerShellで環境変数を参照、設定する](https://www.whyit.work/entry/2018/07/09/171632)

@@ -4,6 +4,7 @@
     "files.associations":
     {
         "*.bat":"powershell"
-    }
+    },
+    "files.encoding": "shiftjis"
 }
 

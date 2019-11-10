@@ -1,6 +1,8 @@
 # windows_path
 
-ユーザ環境変数のpathを設定。コンテキストの送るメニューに、「このファイルへパスを通す」を追加する。
+コンテキストの送るメニューに、「このファイルへパスを通す」を追加する。
+ユーザ環境変数のpathとして設定されます。
+ファイルに対してこの送るメニューを実行した場合は、親ディレクトリのパスを通します。
 
 ## 最初に注意
 
@@ -33,38 +35,20 @@
 
 ### 3. 環境設定を開きます
 
-<p>
-マイコンピュータを右クリック -> プロパティ -> 設定の変更 -> 詳細設定 ->  環境変数
-</p>
-
-1. ユーザー側に、新たな環境変数`path2`を作ります。
+1. [Windowsキー] + [Pauseキー] -> 設定の変更 -> 詳細設定 ->  環境変数
 2. もともとのユーザー環境変数pahtに、`%path2%`を追加します。
-3. `path2`に、`path`の最後の１つを移動し、最初の変数とします。これをやらないと`;`が先頭に追加され、正常に動作しません。(7/20追記)
 
 <p>
-例：もともと<br>
-<br>
-`path`  = `C:\aaaa\bin;D:\iiii\bin`<br>
-`path2` = `(なし)`<br>
-<br>
-だったものが、変更後、<br>
-<br>
-`path`  = `C:\aaaa\bin;%path2%`<br>
-`path2` = `D:\iiii\bin`<br>
-<br>
-になっている必要があります。<br>
-</p>
-<p>
-これらをやらないと、`setx`コマンドの1024文字制限(注3-1.)に引っかかる可能性があるのと、もとの環境変数`path`を保護する意味合いがあります。
+path2がまだないときは、後述するスクリプトにて自動追加されます。path2に分けるいことで、環境変数の文字制限(注3-1.)に引っかかる危険性を回避したり、もとの環境変数`path`を保護したりできます。
 </p>
 
 (注3-1.) [＠IT > クラウド > Windows Server Insider > 環境変数のサイズやPATHの長さ制限に注意](https://www.atmarkit.co.jp/ait/articles/1510/30/news041.html)
 
 ### 4. 番外編。システム環境変数とする場合
 
-バッチファイルのsetxへ、以下のように`/M`を書き加えます。
+以下のコマンドがある行で、一番右の'User'を、'Machine'に書き換えます。
 ```
-setx PATH2 %newpath% /M
+[Environment]::SetEnvironmentVariable('Path2', $NewPath, 'Machine')
 ```
 
 ## 参考1: バッチファイル
@@ -91,3 +75,5 @@ setx PATH2 %newpath% /M
 - [IT製品情報 IT Search+解説/事例記事（サーバ/ストレージ）【連載】PowerShell Core入門 - 基本コマンドの使い方 [6] ファイルやディレクトリの表示 Get-Item、Get-ChildItem、Format-List](https://news.mynavi.jp/itsearch/article/hardware/3718)
 - [Windows 使ってますね♪ / PowerShell / PowerShellのif文でand,or,xor,notを記述する方法](https://win.just4fun.biz/?PowerShell/PowerShell%E3%81%AEif%E6%96%87%E3%81%A7and%2Cor%2Cxor%2Cnot%E3%82%92%E8%A8%98%E8%BF%B0%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)
 - [ExRecord > PowerShell > Windows PowerShellの文字列内で変数を扱う方法](http://exrecord.net/how-to-use-variable-in-string)
+- [CodeZine > Windows PowerShell 入門 > Windows PowerShell 入門（10）－デバッグ編](https://codezine.jp/article/detail/3067)
+- [ほそぼそプログラミング日記 » PowerShell » 【PowerShell】環境変数を設定する](https://hosopro.blogspot.com/2017/01/powershell-set-environment-variable.html)

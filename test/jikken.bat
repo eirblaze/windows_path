@@ -6,7 +6,14 @@ Write-Host $Arg1
 
 # ファイル存在チェック
 Write-Host "ファイル存在チェック"
-Test-Path $Arg1
+
+if( -Not(Test-Path $Arg1) ){
+    Write-Host '指定されたファイルは存在しません。処理を終了します。'
+    exit
+}
+
+# アイテムを取得
+Get-Item $Arg1
 
 # バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ 親フォルダの絶対パスを取得する方法 https://bayashita.com/p/entry/show/133
 Write-Host "親フォルダの絶対パスを取得する"

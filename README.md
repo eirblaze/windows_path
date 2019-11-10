@@ -88,3 +88,5 @@ setx PATH2 %newpath% /M
 - [MURA's HomePage > Windows にまつわる e.t.c. > PowerShell スクリプト引数(Param)の Tips](https://www.vwnet.jp/Windows/PowerShell/Param.htm)
 - [Test-Pathコマンドレットで変数の有無を確認できる](https://m0t0k1x2.tumblr.com/post/133499335514/test-path%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%AC%E3%83%83%E3%83%88%E3%81%A7%E5%A4%89%E6%95%B0%E3%81%AE%E6%9C%89%E7%84%A1%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%81%8D%E3%82%8B)
 - [バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ ファイルとフォルダのどちらかを判定する方法](https://bayashita.com/p/entry/show/229)
+- [IT製品情報 IT Search+解説/事例記事（サーバ/ストレージ）【連載】PowerShell Core入門 - 基本コマンドの使い方 [6] ファイルやディレクトリの表示 Get-Item、Get-ChildItem、Format-List](https://news.mynavi.jp/itsearch/article/hardware/3718)
+- [Windows 使ってますね♪ / PowerShell / PowerShellのif文でand,or,xor,notを記述する方法](https://win.just4fun.biz/?PowerShell/PowerShell%E3%81%AEif%E6%96%87%E3%81%A7and%2Cor%2Cxor%2Cnot%E3%82%92%E8%A8%98%E8%BF%B0%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)

@@ -79,6 +79,7 @@ else
 Write-Host "ÉZÉbÉgó\íË $($NewPath)"
 [Environment]::SetEnvironmentVariable('PATHN', $NewPath, 'User')
 
+
 Write-Host "åªç›ÇÃenv:PathN $($env:PathN)"
 
 Write-Host "---------------------------------------------------------------------------------------"

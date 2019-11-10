@@ -87,3 +87,4 @@ setx PATH2 %newpath% /M
 - [Powershellで引数を受け取る](https://microsoftou.com/ps-arguments/)
 - [MURA's HomePage > Windows にまつわる e.t.c. > PowerShell スクリプト引数(Param)の Tips](https://www.vwnet.jp/Windows/PowerShell/Param.htm)
 - [Test-Pathコマンドレットで変数の有無を確認できる](https://m0t0k1x2.tumblr.com/post/133499335514/test-path%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%AC%E3%83%83%E3%83%88%E3%81%A7%E5%A4%89%E6%95%B0%E3%81%AE%E6%9C%89%E7%84%A1%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%81%8D%E3%82%8B)
+- [バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ ファイルとフォルダのどちらかを判定する方法](https://bayashita.com/p/entry/show/229)

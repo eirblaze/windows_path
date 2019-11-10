@@ -63,19 +63,22 @@ if (Test-Path Env:Path4) {
 
 # 新規の場合
 if ( -Not(Test-Path Env:PathN) ) {
+    # 新しい文字列を生成
     Write-Host "new PathN"
     $NewPath = $item.FullName
 }
 # 追加の場合
 else
 {
+    # 新しい文字列を生成
     Write-Host "add PathN"
     $NewPath = "$($env:PathN);$($item.FullName)"
 }
 
 # 環境変数をセット
 Write-Host "セット予定 $($NewPath)"
-[Environment]::SetEnvironmentVariable('PATH', $Env:PathN, $NewPath)
+[Environment]::SetEnvironmentVariable('PATHN', $NewPath, 'User')
 
+Write-Host "現在のenv:PathN $($env:PathN)"
 
 Write-Host "---------------------------------------------------------------------------------------"

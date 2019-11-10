@@ -1,8 +1,5 @@
-@echo off
+@powershell -NoProfile -ExecutionPolicy Unrestricted "$s=[scriptblock]::create((gc \"%~f0\"|?{$_.readcount -gt 1})-join\"`n\");&$s" ""%*""&goto:eof
 
-set newpath=%~d1%~p1
-set newpath=%PATH2%;%newpath:~0,-1%
-set newpath="%newpath%"
+Param($Arg1)
 
-echo %newpath%
-pause
+Write-Host $Arg1

@@ -40,45 +40,26 @@ else
 }
 Write-Host "フルネーム $($item.FullName)"
 
-# 環境変数存在チェック/取得 - $env:環境変数名
-Write-Host "環境変数存在チェック/取得"
-if (Test-Path Env:Path) {
-    Write-Host "Path"
-    Write-Host $env:Path
-}
-if (Test-Path Env:Path2) {
-    Write-Host "Path2"
-    Write-Host $env:Path2
-}
-if (Test-Path Env:Path3) {
-    Write-Host "Path3"
-    Write-Host $env:Path3
-}
-if (Test-Path Env:Path4) {
-    Write-Host "Path4"
-    Write-Host $env:Path4
-}
-
 # 新しい環境変数を生成。新規／上書きで処理を分岐。
 
 # 新規の場合
-if ( -Not(Test-Path Env:PathN) ) {
+if ( -Not(Test-Path Env:Path2) ) {
     # 新しい文字列を生成
-    Write-Host "new PathN"
+    Write-Host "new Path2"
     $NewPath = $item.FullName
 }
 # 追加の場合
 else
 {
     # 新しい文字列を生成
-    Write-Host "add PathN"
-    $NewPath = "$($env:PathN);$($item.FullName)"
+    Write-Host "add Path2"
+    $NewPath = "$($env:Path2);$($item.FullName)"
 }
 
 # 環境変数をセット
 Write-Host "セット予定 $($NewPath)"
-[Environment]::SetEnvironmentVariable('PATHN', $NewPath, 'User')
+[Environment]::SetEnvironmentVariable('Path2', $NewPath, 'User')
 
-Write-Host "現在のenv:PathN $($env:PathN)"
+Write-Host "現在のenv:Path2 $($env:Path2)"
 
 Write-Host "---------------------------------------------------------------------------------------"

@@ -90,3 +90,4 @@ setx PATH2 %newpath% /M
 - [バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ ファイルとフォルダのどちらかを判定する方法](https://bayashita.com/p/entry/show/229)
 - [IT製品情報 IT Search+解説/事例記事（サーバ/ストレージ）【連載】PowerShell Core入門 - 基本コマンドの使い方 [6] ファイルやディレクトリの表示 Get-Item、Get-ChildItem、Format-List](https://news.mynavi.jp/itsearch/article/hardware/3718)
 - [Windows 使ってますね♪ / PowerShell / PowerShellのif文でand,or,xor,notを記述する方法](https://win.just4fun.biz/?PowerShell/PowerShell%E3%81%AEif%E6%96%87%E3%81%A7and%2Cor%2Cxor%2Cnot%E3%82%92%E8%A8%98%E8%BF%B0%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95)
+- [ExRecord > PowerShell > Windows PowerShellの文字列内で変数を扱う方法](http://exrecord.net/how-to-use-variable-in-string)

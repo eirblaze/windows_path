@@ -13,24 +13,30 @@ if( -Not(Test-Path $Arg1) ){
 }
 
 # アイテムを取得
-Get-Item $Arg1
-
-# バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ 親フォルダの絶対パスを取得する方法 https://bayashita.com/p/entry/show/133
-Write-Host "親フォルダの絶対パスを取得する"
-$parent_folder = Split-Path $Arg1
-Test-Path $parent_folder
+$item = Get-Item $Arg1
 
 # PSIsContainer でファイルかフォルダかを判定 https://bayashita.com/p/entry/show/229
 Write-Host "ファイルかフォルダかを判定"
-if($Arg1.PSIsContainer)
+if($item.PSIsContainer)
 {
     # フォルダの場合の処理
-    Write-Host 'フォルダです。'
+    Write-Host "$($item.Name)はフォルダです。"
 }
 else
 {
-    # ファイルの場合の処理
-    Write-Host 'ファイルです。'
+    # ファイルの場合は・・・
+    Write-Host "$($item.Name)はファイルです。"
+
+    # 親フォルダをアイテムとして再取得
+    # バヤシタ ＞ PowerShell ＞ ファイル・フォルダ ＞ 親フォルダの絶対パスを取得する方法 https://bayashita.com/p/entry/show/133
+    $parent_folder = Split-Path $Arg1
+
+    # アイテムを再取得
+    $item = Get-Item $parent_folder
+
+    if ($item.PSIsContainer) {
+        Write-Host "$($item.Name)として再取得成功"
+    }
 }
 
 # 環境変数存在チェック
@@ -46,3 +52,5 @@ Write-Host "Path2"
 Write-Host $env:PATH2
 
 # 環境変数をセット。新規／上書き
+
+Write-Host "---------------------------------------------------------------------------------------"

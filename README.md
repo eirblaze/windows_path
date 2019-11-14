@@ -24,7 +24,7 @@
 
 ### 1. バッチファイル入手
 
-このリポジトリにある、[`windows_path.ps1.bat`](https://raw.githubusercontent.com/eirblaze/windows_path/master/windows_path.bat)を、任意のフォルダにコピーしてください。
+このリポジトリにある、[`windows_path.ps1.bat`](https://raw.githubusercontent.com/eirblaze/windows_path/master/windows_path.ps1.bat)を、任意のフォルダにコピーしてください。
 
 ### 2. コンテキストメニュー追加
 

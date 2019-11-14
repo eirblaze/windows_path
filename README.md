@@ -1,4 +1,6 @@
-# windows_path
+# windows_path.ps1.bat
+
+![windows_path](https://raw.githubusercontent.com/eirblaze/windows_path/master/img/windows_path.png)
 
 エクスプローラのフォルダやファイルを右クリックして現れる「送る」メニューから、環境変数「PATH」の追加ができるようになります。
 

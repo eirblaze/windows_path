@@ -51,13 +51,21 @@ if ( -Not(Test-Path Env:Path2) ) {
 # 追加の場合
 else
 {
-    # 新しい文字列を生成
+    # 文字列を追加する
     Write-Verbose "add Path2"
-    $NewPath = "$($env:Path2);$($item.FullName)"
+
+    # 末尾の区切り文字をチェック。
+    $kugiri = ""
+    if ( $env:Path2.Substring($env:Path2.Length - 1, 1) -ne ";") {
+        $kugiri = ";"
+    }
+
+    # 新しい文字列を生成
+    $NewPath = "$($env:Path2)$($kugiri)$($item.FullName)"
 }
 
 # 環境変数をセット
-Write-Host "セット予定 $($NewPath)"
+Write-Verbose "セット予定 $($NewPath)"
 [Environment]::SetEnvironmentVariable('Path2', $NewPath, 'User')
 
 Write-Verbose "現在のenv:Path2 $($env:Path2)"

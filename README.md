@@ -1,4 +1,7 @@
-# windows_path.ps1.bat
+# 「送る」で「PATH」を通す
+
+Windowsの環境変数「PATH」を通す機能を、コンテキストの「送る」メニューに追加します。
+本体は windows_path.ps1.bat です。
 
 ![windows_path](https://raw.githubusercontent.com/eirblaze/windows_path/master/img/windows_path.png)
 
